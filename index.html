@@ -16,51 +16,65 @@
 </head>
 
 <body>
-    <div class="container border border-2 border-light mt-3 p-2">
-       <header>
-           <div class="row">
+    <div class="container rounded border border-2 border-light p-2">
+        <div class="d-flex justify-content-end mt-3">
+            <button type="button" class="btn btn-dark" onclick="window.print()">Print this page</button>
+        </div>
+              
+        <header>
+           <div class="row align-items-center">
                <div class="col-12 col-md-6">
                    <img src="img/IdeaFoundryLogo.png" alt="Idea Foundry Logo" class="img-fluid">
                </div>
-               <div class="col-12 col-md-6 d-flex justify-content-end align-items-center"><b>Client No: 4908</b></div>
+               <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end">
+                   <strong>Client No:</strong>&nbsp;4908
+                </div>
            </div>
            <hr>
 
-            <div class="row">
-               <div class="col"><b>Date:</b> 05/12/2019</div>
-               <div class="col d-flex justify-content-end"><b>Invoice No:</b> 19005</div>
+            <div class="row row-cols-1 row-cols-md-2">
+               <div class="col">
+                   <strong>Date:</strong>&nbsp;05/12/2019
+                </div>
+               <div class="col d-flex justify-content-start justify-content-md-end">
+                   <strong>Invoice No:</strong>&nbsp;19005
+                </div>
             </div>
             <hr>
 
             <div class="row">
-                <address class="col">
+                <div class="col">
                     <div>
-                        <b>Invoice To:</b><br>
-                        Mark Davis<br>
-                        3333 AI Davis Way<br>
-                        Las Vegas, NV 89118
-                    </div>s    
-                </address>
-                <address class="col d-flex justify-content-end">
+                        <strong>Invoice To:</strong><br>
+                        <address>
+                            Mark Davis<br>
+                            3333 AI Davis Way<br>
+                            Las Vegas, NV 89118                        
+                        </address>                        
+                    </div>  
+                </div>
+                <div class="col d-flex justify-content-end">
                     <div>
-                        <b>Pay To:</b><br>
-                        Idea Foundry, Inc.<br>
-                        2705 N. Enterprise St.<br>
-                        Kernersville, NC 27284
+                        <strng>Pay To:</strng><br>
+                        <address>
+                            Idea Foundry, Inc.<br>
+                            2705 N. Enterprise St.<br>
+                            Kernersville, NC 27284
+                        </address>                        
                     </div>    
-                </address>
+                </div>
             </div>           
        </header>
     
         <div class="table-responsive">
-            <table class="table table-bordered table-striped">
+            <table class="table table-striped table-bordered">
                 <thead>
                     <tr">
                         <th>Service</th>
                         <th>Description</th>
                         <th>Rate</th>
                         <th>QTY</th>
-                        <th>Amount</th>
+                        <th class="text-end">Amount</th>
                     </tr>
                 </thead>
 
@@ -70,7 +84,7 @@
                         <td>Website Design</td>
                         <td>$60.00</td>
                         <td>10</td>
-                        <td>$600</td>
+                        <td class="text-end">$600.00</td>
                     </tr>
 
                     <tr>
@@ -78,7 +92,7 @@
                         <td>Website Development</td>
                         <td>$150.00</td>
                         <td>10</td>
-                        <td>$1,500.00</td>                    
+                        <td class="text-end">$1,500.00</td>                    
                     </tr>
 
                     <tr>
@@ -86,24 +100,25 @@
                         <td>Deployment and Hosting</td>
                         <td>$450.00</td>
                         <td>1</td>
-                        <td>$450.00</td>
+                        <td class="text-end">$450.00</td>
                     </tr>
-
+                </tbody>
+                <tfoot>
                     <tr>
                         <td colspan="4">Sub Total:</td>
-                        <td> $2,550.00</td>
+                        <td class="text-end"> $2,550.00</td>
                     </tr>
 
                     <tr>
                         <td colspan="4">Tax:</td>
-                        <td>$0.00</td>
+                        <td class="text-end">$0.00</td>
                     </tr>
 
                     <tr>
                         <td colspan="4">Total:</td>
-                        <td>$2,550.00</td>
+                        <td class="text-end">$2,550.00</td>
                     </tr>
-                </tbody>           
+                </tfoot>           
                 <caption><strong>Note:</strong> This is a computer generated receipt and does not require physical signature.</caption>
             </table>
         </div>
